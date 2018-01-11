@@ -1,15 +1,14 @@
+
+/*suggest the mp4 file 24 fps and 80*60 is better*/
+
 #include "Pickpng.hpp"
 #include "happyke.hpp"
 
 int main(){
-    //CaptureFrames();
-    //cout<<"Txt_file complete, press any key continue: "<<endl;
-    //cin.get();
-    Delay(250);
-    printfilmstream("/Users/jiyangwang/Desktop/texttest/test.txt");
+    //CaptureFrames();//this func is render mp4 to txt
+    printfilmstream("path to txt file");
     system("clear");
     cout<<"End, thanks for watching"<<endl;
-    //cin.get();
     waitKey(0);
     return 0;
 }
