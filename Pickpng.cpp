@@ -12,7 +12,7 @@
 void CaptureFrames(){
     //set the ascii vector
     ofstream fout;
-    fout.open("/Users/jiyangwang/Desktop/texttest/test.txt",ios::trunc);//path for txt file
+    fout.open("path to txt file",ios::trunc);//path to txt file
     vector<string> vec_ascii;
     string ascii;
     string ascii_string("$ @ B % 8 & W M # Z O 0 Q L C J U Y X * o a h k b d p q w m z c v u n x r j f t / \\ | ( ) 1 { } [ ] ? - _ + ~ < > i ! l I ; : , \" ^ ` ' .");//
@@ -24,10 +24,10 @@ void CaptureFrames(){
     
     int length = static_cast<int>(vec_ascii.size());
     
-    VideoCapture *cap = new VideoCapture("/Users/jiyangwang/Desktop/badappletest2.mp4");//path for mp4 film
+    VideoCapture *cap = new VideoCapture("path to mp4 film");//path to mp4 film
     //Mat Lastframe;
     long count = 0;
-    while(++count <= 4340){//4340 means all the film
+    while(++count <= 4340){//4340 means all the film //24fps 3min37s
         //set the property
         cap->set(CV_CAP_PROP_POS_MSEC, count * 50);
         Mat frame;
